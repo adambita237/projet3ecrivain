@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Contacts-Blog de l'Ecrivain</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body>
+
+       <div id="conteneur">
+
+            <header><!--Haut de page-->
+                <div id="logo">
+                    <img src="#" alt="Logo du Blog Ecrivain" >
+                </div>
+
+                <div id="titre_site">
+                    <h1>BLOG DE L'ECRIVAIN</h1>
+                    <h2>Toute l'actualité sur l'auteur</h2>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#" >Accueil</a></li>
+                        <li><a href="#" >Auteur</a></li>
+                        <li><a href="#" >Articles</a></li>
+                        <li><a href="#" >Livres</a></li>
+                        <li><a href="#" >Contacts</a></li>
+                    </ul>
+                </nav>
+
+            </header>
+
+            <div id="conteneur">
+                <div class="bloc_formulaire">
+                    <h2>Contacts</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Donec id tincidunt risus, et lacinia lorem. Vestibulum sollicitudin 
+                    varius urna condimentum scelerisque. Sed pharetra dapibus augue id 
+                    condimentum.</p>
+
+                    <ul>
+                        <li>Adresse:Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Donec id tincidunt risus, et lacinia lorem.</li>
+                        <li>Téléphone: +00 000 000 000</li>
+                        <li>Email: info@votresite.com</li>
+                    </ul>
+
+                    <h2>Réseaux Sociaux</h2>
+
+                    <ul>
+                        <li><a href="#" target="_blank"><img src="#" alt="Facebook" > : @blogecrivain</a></li>
+                        <li><a href="#" target="_blank"><img src="#" alt="Whatapps" > : @blogecrivain</a></li>
+                        <li><a href="#" target="_blank"><img src="#" alt="Twitter" >  : @blogecrivain</a></li>
+                    </ul>
+                </div>
+
+                <div class="bloc_formulaire">
+                    <h2>Nous Ecrire</h2>
+                    <form method="post" action="publier.php">
+                        <p>
+                        <label for="nom">Nom :</label>
+                        <input type="text" name="nom" id="nom" />               
+                        <br /><br />
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" name="prenom" id="prenom" />               
+                        <br /><br />
+                        <label for="pass">Email :</label>
+                        <input type="email" name="mail" id="mail" />
+                        <br /><br />
+                        <label for="objet">Objet :</label>
+                        <input type="text" name="objet" id="objet" />               
+                        <br /><br />
+                        <label for="message">Message:</label>
+                        <br />
+                        <textarea name="message" id="message" rows="10" cols="50" 
+                        placeholder="Ecrire votre commentaire ici">
+                        </textarea>                            
+                        </p>
+                            <input type="submit" value="Envoyer" />
+                    </form>
+                </div>
+
+                <div id="googlemap">
+                        <div style="overflow:hidden;width: 700px;position: relative;">
+                            <iframe width="700" height="440" 
+                            src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=mboasoftwares+(Titre)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" 
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                            </iframe>
+                            <div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;">
+                            <small style="line-height: 1.8;font-size: 2px;background: #fff;">
+                            Powered by <a href="https://embedgooglemaps.com/de/">
+                            embedgooglemaps DE</a> & <a href="http://botonmegusta.org/">
+                            ww://botonmegusta.org/</a></small></div>
+                            <style>#gmap_canvas img{max-width:none!important;background:none!important}
+                            </style></div><br />
+                </div>
+            </div>
+
+            <footer><!--Bas de page-->
+                <section><!--Blocs bas de page-->
+                    <div id="connexion">
+                        <h2>Se Connecter</h2>
+                        <form method="post" action="connexion.php">
+                            <p>
+                            <label for="pseudo">login :</label>
+                            <input type="text" name="pseudo" id="pseudo" />
+                                        
+                            <br /><br />
+                            <label for="pass">Mot de passe :</label>
+                            <input type="password" name="pass" id="pass" />
+                                        
+                            </p>
+                            <input type="submit" value="Connexion" />
+                        </form>
+                    </div>
+
+                    <div id="bloc_contact">
+                        <h2>Contacts</h2>
+                        <ul>
+                            <li>Adresse: 23 Allée Léon Gambetta, 92110</li>
+                            <li>Téléphone:+00 000 000 000</li>
+                            <li>Email:info@monsite.com</li>
+                            <li>BP:15706 Yaoundé Cameroun</li>
+                        </ul>
+                    </div>
+
+                    <div id="Bloc_tag">
+                            <label for="site-search">Rechercher sur le site:</label>
+                            <input type="search" id="site-search" name="q"
+                                   aria-label="Search through site content">
+                            
+                            <button>Rechercher</button>
+                    </div>
+                </section>
+
+                <section><!--copyright-->
+                    <div id="reseaux_sociaux">
+                        <ul>
+                            <li><a href="#" target="_blank"><img src="#" alt="Facebook" ></a></li>
+                            <li><a href="#" target="_blank"><img src="#" alt="Twitter" ></a></li>
+                            <li><a href="#" target="_blank"><img src="#" alt="Whatapps" ></a></li>
+                        </ul>
+
+                        <p>Copyright &copy; 2019 | par <a href="#" target="_blank">ADAMBITA</a> </p>
+                    </div>
+                </section>
+
+            </footer>
+       </div>
+
+    </body>
+
+</html>

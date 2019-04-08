@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title>Articles-Blog de l'Ecrivain</title>
+        <title>Article-Blog de l'Ecrivain</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="css/style.css" />
     </head>
@@ -33,51 +33,58 @@
 
             </header>
 
-           <section>
-               <div id="article_en_une">
-                   <img src="#" alt="Image à la une" >
-                   <h1>Article à la une</h1>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Donec id tincidunt risus, et lacinia lorem.Vestibulum sollicitudin 
-                    varius urna condimentum scelerisque
-                   </p>
-                   <div class="Bouton">
-                        <a href="#" target="_blank">Lire la suite</a>
-                    </div>
-               </div>
-           </section>
-
             <section>
                 <article>
-                    <h1>Titre 1 Article</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Donec id tincidunt risus, et lacinia lorem.Vestibulum sollicitudin 
-                    varius urna condimentum scelerisque</p>
-                    <div class="Bouton">
-                        <a href="#" target="_blank">Lire la suite</a>
+                    <h1>Titre de l'article</h1>
+                    <div id="image_article">
+                        <img src="#" alt="image de l\'article">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Donec id tincidunt risus, et lacinia lorem. Vestibulum sollicitudin 
+                        varius urna condimentum scelerisque. Sed pharetra dapibus augue id 
+                        condimentum. Donec ullamcorper molestie neque sit amet eleifend. 
+                        Morbi nibh tortor, hendrerit eu urna ut, laoreet cursus elit.</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Donec id tincidunt risus, et lacinia lorem. Vestibulum sollicitudin 
+                        varius urna condimentum scelerisque. Sed pharetra dapibus augue id 
+                        condimentum. Donec ullamcorper molestie neque sit amet eleifend. 
+                        Morbi nibh tortor, hendrerit eu urna ut, laoreet cursus elit.</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Donec id tincidunt risus, et lacinia lorem. Vestibulum sollicitudin 
+                        varius urna condimentum scelerisque. Sed pharetra dapibus augue id 
+                        condimentum. Donec ullamcorper molestie neque sit amet eleifend. 
+                        Morbi nibh tortor, hendrerit eu urna ut, laoreet cursus elit.</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Donec id tincidunt risus, et lacinia lorem. Vestibulum sollicitudin 
+                        varius urna condimentum scelerisque. Sed pharetra dapibus augue id 
+                        condimentum. Donec ullamcorper molestie neque sit amet eleifend. 
+                        Morbi nibh tortor, hendrerit eu urna ut, laoreet cursus elit.</p>
                     </div>
                 </article>
-
-                <article>
-                        <h1>Titre 1 Article</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec id tincidunt risus, et lacinia lorem.Vestibulum sollicitudin 
-                        varius urna condimentum scelerisque</p>
-                        <div class="Bouton">
-                            <a href="#" target="_blank">Lire la suite</a>
-                        </div>
-                </article>
-
-                <article>
-                        <h1>Titre 1 Article</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec id tincidunt risus, et lacinia lorem.Vestibulum sollicitudin 
-                        varius urna condimentum scelerisque</p>
-                        <div class="Bouton">
-                            <a href="#" target="_blank">Lire la suite</a>
-                        </div>
-                </article>
             </section>
+
+            <div id="formulaire_commentaire">
+                <form method="post" action="publier.php">
+                    <p>
+                    <label for="nom">Nom :</label>
+                    <input type="text" name="nom" id="nom" />               
+                    <br /><br />
+                    <label for="pass">Email :</label>
+                    <input type="email" name="mail" id="mail" />
+                    <br /><br />
+                    <label for="commentaire">Laissez un Commentaire
+                    </label>
+                    <br />
+                    <textarea name="commentaire" id="commentaire" rows="10" cols="50" 
+                    placeholder="Ecrire votre commentaire ici">
+                    </textarea>       
+                                       
+                    </p>
+                    <input type="submit" value="Envoyer" />
+                </form>
+            </div>
 
             <footer><!--Bas de page-->
                 <section><!--Blocs bas de page-->
