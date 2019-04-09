@@ -11,7 +11,7 @@ body{
     background-color:#4c4c4c;
 }
 
-#line {
+.line {
     padding: 0px; 
     margin: auto; 
     border: solid 1px #dfdfe0; 
@@ -21,7 +21,7 @@ a{
     color: #f9d8a3;
 }
 
-p, h1, h2, ul{
+p, h1, h2, h3, ul{
     color:#e8e8e8;
 }
 
@@ -31,7 +31,7 @@ h1{
     text-align: center;
 }
 
-h2{
+h2, h3{
     font-size: 1.5em;
     font-family: cac_champagneregular;
     text-align: center;
@@ -125,19 +125,19 @@ footer{
     margin-top: 40px;
 }
 
-#reseaux_sociaux ul{
+.reseaux_sociaux ul{
     list-style-type: none;
     display: flex;
     
 }
 
-#reseaux_sociaux il{
+.reseaux_sociaux il{
         margin-right: 15px;
         width: 18%;
     
 }
 
-#reseaux_sociaux img{
+.reseaux_sociaux img{
 		
     border: 1px #dfdfe0 double;
     border-radius: 5px;
