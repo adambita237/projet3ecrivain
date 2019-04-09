@@ -13,7 +13,7 @@
 
             <header><!--Haut de page-->
                 <div id="logo">
-                    <img src="#" alt="Logo du Blog Ecrivain" >
+                    <img src="images/logo.png" alt="Logo du Blog Ecrivain" >
                 </div>
 
                 <div id="titre_site">
@@ -31,7 +31,17 @@
                     </ul>
                 </nav>
 
+                <div id="reseaux_sociaux">
+                        <ul>
+                            <li><a href="#" target="_blank"><img src="images/facebook.png" alt="Facebook" ></a></li>
+                            <li><a href="#" target="_blank"><img src="images/twitter.jpg" alt="Twitter" ></a></li>
+                            <li><a href="#" target="_blank"><img src="images/linkedin.png" alt="Linkedin" ></a></li>
+                        </ul>
+                    </div>
+
             </header>
+
+            <div id="line"></div>
 
             <div id="bloc_auteur">
                 <div id="Photo_auteur">
@@ -70,8 +80,9 @@
             </section>
 
             <footer><!--Bas de page-->
-                <section><!--Blocs bas de page-->
-                    <div id="connexion">
+                <div id="bloc_footer1"><!--Blocs bas de page-->
+                    
+                    <div class="bloc1">
                         <h2>Se Connecter</h2>
                         <form method="post" action="connexion.php">
                             <p>
@@ -86,8 +97,10 @@
                             <input type="submit" value="Connexion" />
                         </form>
                     </div>
+                    
+                    <div class="verticale"></div>
 
-                    <div id="bloc_contact">
+                    <div class="bloc2">
                         <h2>Contacts</h2>
                         <ul>
                             <li>Adresse: 23 Allée Léon Gambetta, 92110</li>
@@ -97,26 +110,35 @@
                         </ul>
                     </div>
 
-                    <div id="Bloc_tag">
+                    <div class="verticale"></div>
+
+                    <div class="bloc3">
+                       
+                        <p>
+                            <h2>Espace reccherche</h2>
                             <label for="site-search">Rechercher sur le site:</label>
                             <input type="search" id="site-search" name="q"
                                    aria-label="Search through site content">
-                            
+                        </p>
                             <button>Rechercher</button>
+                       
                     </div>
-                </section>
+                </div>
 
-                <section><!--copyright-->
-                    <div id="reseaux_sociaux">
-                        <ul>
-                            <li><a href="#" target="_blank"><img src="#" alt="Facebook" ></a></li>
-                            <li><a href="#" target="_blank"><img src="#" alt="Twitter" ></a></li>
-                            <li><a href="#" target="_blank"><img src="#" alt="Whatapps" ></a></li>
-                        </ul>
-
+                <div id="bloc_footer2"><!--copyright-->
+                    
+                    <div id="copyright">
                         <p>Copyright &copy; 2019 | par <a href="#" target="_blank">ADAMBITA</a> </p>
                     </div>
-                </section>
+
+                    <div id="reseaux_sociaux">
+                        <ul>
+                            <li><a href="#" target="_blank"><img src="images/facebook.png" alt="Facebook" ></a></li>
+                            <li><a href="#" target="_blank"><img src="images/twitter.jpg" alt="Twitter" ></a></li>
+                            <li><a href="#" target="_blank"><img src="images/linkedin.png" alt="Linkedin" ></a></li>
+                        </ul>
+                    </div>
+                </div>
 
             </footer>
        </div>
