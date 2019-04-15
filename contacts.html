@@ -4,6 +4,7 @@
     <head>
         <title>Contacts-Blog de l'Ecrivain</title>
         <meta charset="utf-8" />
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="css/style.css" />
     </head>
 
@@ -13,25 +14,24 @@
 
             <header><!--Haut de page-->
                 <div id="logo">
-                    <img src="images/logo.png" alt="Logo du Blog Ecrivain" >
+                    <a href=""><img src="images/logo.png" alt="Logo du Blog Ecrivain" ></a>
                 </div>
 
                 <div id="titre_site">
-                    <h1>BLOG DE L'ECRIVAIN</h1>
-                    <h2>Toute l'actualité sur l'auteur</h2>
+                    <h1>BILLET SIMPLE POUR L'ALASKA</h1>
+                    <h2>Un oeuvre de Jean Forteroche</h2>
                 </div>
 
                 <nav>
                     <ul>
-                        <li><a href="#" >Accueil</a></li>
-                        <li><a href="#" >Auteur</a></li>
-                        <li><a href="#" >Articles</a></li>
-                        <li><a href="#" >Livres</a></li>
-                        <li><a href="#" >Contacts</a></li>
+                        <li><a href="index.html" >Accueil</a></li>
+                        <li><a href="auteur.html" >Auteur</a></li>
+                        <li><a href="chapitres.html" >Chapitres</a></li>
+                        <li><a href="contacts.html" >Contacts</a></li>
                     </ul>
                 </nav>
 
-                <div id="reseaux_sociaux">
+                <div class="reseaux_sociaux">
                         <ul>
                             <li><a href="#" target="_blank"><img src="images/facebook.png" alt="Facebook" ></a></li>
                             <li><a href="#" target="_blank"><img src="images/twitter.jpg" alt="Twitter" ></a></li>
@@ -43,59 +43,55 @@
 
             <div class="line"></div>
 
-            <div id="conteneur">
-                <div class="bloc_formulaire">
-                    <h2>Contacts</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Donec id tincidunt risus, et lacinia lorem. Vestibulum sollicitudin 
-                    varius urna condimentum scelerisque. Sed pharetra dapibus augue id 
-                    condimentum.</p>
-
-                    <ul>
-                        <li>Adresse:Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Donec id tincidunt risus, et lacinia lorem.</li>
-                        <li>Téléphone: +00 000 000 000</li>
-                        <li>Email: info@votresite.com</li>
-                    </ul>
-
-                    <h2>Réseaux Sociaux</h2>
-
-                    <ul>
-                        <li><a href="#" target="_blank"><img src="#" alt="Facebook" > : @blogecrivain</a></li>
-                        <li><a href="#" target="_blank"><img src="#" alt="Whatapps" > : @blogecrivain</a></li>
-                        <li><a href="#" target="_blank"><img src="#" alt="Twitter" >  : @blogecrivain</a></li>
-                    </ul>
-                </div>
-
-                <div class="bloc_formulaire">
-                    <h2>Nous Ecrire</h2>
-                    <form method="post" action="publier.php">
-                        <p>
-                        <label for="nom">Nom :</label>
-                        <input type="text" name="nom" id="nom" />               
-                        <br /><br />
-                        <label for="prenom">Prénom :</label>
-                        <input type="text" name="prenom" id="prenom" />               
-                        <br /><br />
-                        <label for="pass">Email :</label>
-                        <input type="email" name="mail" id="mail" />
-                        <br /><br />
-                        <label for="objet">Objet :</label>
-                        <input type="text" name="objet" id="objet" />               
-                        <br /><br />
-                        <label for="message">Message:</label>
-                        <br />
-                        <textarea name="message" id="message" rows="10" cols="50" 
-                        placeholder="Ecrire votre commentaire ici">
-                        </textarea>                            
-                        </p>
-                            <input type="submit" value="Envoyer" />
-                    </form>
-                </div>
+            <div id="conteneur_contact">
+                <section>
+                        <div class="bloc_formulaire">
+                                <h2>Contacts</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Donec id tincidunt risus, et lacinia lorem. Vestibulum sollicitudin 
+                                varius urna condimentum scelerisque. Sed pharetra dapibus augue id 
+                                condimentum.</p>
+            
+                                <ul>
+                                    <li><img src="images/fleche.png" alt="fleche" > Adresse:Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Donec id tincidunt risus, et lacinia lorem.</li><br />
+                                    <li><img src="images/fleche.png" alt="fleche" > Téléphone: +00 000 000 000</li><br />
+                                    <li><img src="images/fleche.png" alt="fleche" > Email: info@votresite.com</li><br />
+                                </ul>
+            
+                                <h2>Réseaux Sociaux</h2>
+            
+                                <ul>
+                                    <li><a href="#" target="_blank"><img src="images/facebook.png" alt="Facebook" > : @blogecrivain</a></li><br />
+                                    <li><a href="#" target="_blank"><img src="images/twitter.jpg" alt="Twitter" > : @blogecrivain</a></li><br />
+                                    <li><a href="#" target="_blank"><img src="images/linkedin.png" alt="Linkedin" >  : @blogecrivain</a></li><br />
+                                </ul>
+                            </div>
+            
+                            <div class="bloc_formulaire">
+                                <h2>Nous Ecrire</h2>
+                                <form method="post" action="publier.php">
+                                    <p>
+                                    <label for="nom">Nom :</label>
+                                    <input type="text" name="nom" id="nom" />               
+                                    <br /><br />
+                                    <label for="objet">Objet :</label>
+                                    <input type="text" name="objet" id="objet" />               
+                                    <br /><br />
+                                    <label for="message">Message:</label>
+                                    <br />
+                                    <textarea name="message" id="message" rows="10" cols="50" 
+                                    placeholder="Ecrire votre commentaire ici">
+                                    </textarea>                            
+                                    </p>
+                                        <input type="submit" value="Envoyer" />
+                                </form>
+                            </div>
+                </section>
 
                 <div id="googlemap">
-                        <div style="overflow:hidden;width: 700px;position: relative;">
-                            <iframe width="700" height="440" 
+                        <div style="overflow:hidden;width: 100%;position: relative;">
+                            <iframe width="100%" height="440" 
                             src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=mboasoftwares+(Titre)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" 
                             frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                             </iframe>
@@ -112,8 +108,8 @@
             <footer><!--Bas de page-->
                 <div id="bloc_footer1"><!--Blocs bas de page-->
                     
-                    <div class="bloc1">
-                        <h2>Se Connecter</h2>
+                    <div class="bloc">
+                        <h3>Se Connecter</h3>
                         <form method="post" action="connexion.php">
                             <p>
                             <label for="pseudo">login :</label>
@@ -130,8 +126,8 @@
                     
                     <div class="verticale"></div>
 
-                    <div class="bloc2">
-                        <h2>Contacts</h2>
+                    <div class="bloc">
+                        <h3>Contacts</h3>
                         <ul>
                             <li>Adresse: 23 Allée Léon Gambetta, 92110</li>
                             <li>Téléphone:+00 000 000 000</li>
@@ -142,16 +138,17 @@
 
                     <div class="verticale"></div>
 
-                    <div class="bloc3">
-                       
-                        <p>
-                            <h2>Espace reccherche</h2>
-                            <label for="site-search">Rechercher sur le site:</label>
-                            <input type="search" id="site-search" name="q"
-                                   aria-label="Search through site content">
-                        </p>
-                            <button>Rechercher</button>
-                       
+                    <div class="bloc">
+                            <h3>Commentaires récents</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Donec id tincidunt risus, et lacinia lorem.Vestibulum sollicitudin <br />
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Donec id tincidunt risus, et lacinia lorem.Vestibulum sollicitudin <br />
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Donec id tincidunt risus, et lacinia lorem.Vestibulum sollicitudin <br />
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Donec id tincidunt risus, et lacinia lorem.Vestibulum sollicitudin <br />
+                            </p>
                     </div>
                 </div>
 
@@ -161,7 +158,7 @@
                         <p>Copyright &copy; 2019 | par <a href="#" target="_blank">ADAMBITA</a> </p>
                     </div>
 
-                    <div id="reseaux_sociaux">
+                    <div class="reseaux_sociaux">
                         <ul>
                             <li><a href="#" target="_blank"><img src="images/facebook.png" alt="Facebook" ></a></li>
                             <li><a href="#" target="_blank"><img src="images/twitter.jpg" alt="Twitter" ></a></li>
