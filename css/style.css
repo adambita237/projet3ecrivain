@@ -6,6 +6,8 @@
 		 url('../fonts/cac_champagne-webfont.ttf') format('truetype'),
 		 url('../fonts/cac_champagne-webfont.svg#cac_champagneregular') format('svg');
 }
+@import url(font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Courgette');
 
 body{
     background-color:#4c4c4c;
@@ -39,7 +41,7 @@ aside{
 
 aside h6{
     font-size: 1.5em;
-    font-family: cac_champagneregular;
+    font-family: cac_champagneregular, Courgette;
     text-align: right;
     color:#e8e8e8;
     margin-top: 1px;
@@ -55,7 +57,7 @@ aside h4{
 
 h2, h3{
     font-size: 1.5em;
-    font-family: cac_champagneregular;
+    font-family: cac_champagneregular, Courgette;
     text-align: center;
 }
 
@@ -122,11 +124,20 @@ header{
 }
 
 #conteneur section{
-    display: flex;
-    justify-content: space-between;
+    
     width: 80%;
     margin: auto;
     padding-bottom:70px;
+}
+
+#articles_section{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#carriere_auteur {
+    display: flex;
 }
 
 .verticale{
@@ -160,6 +171,8 @@ footer h3{
 .bloc{
     margin-left: 40px;
     margin-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #bloc_footer2{
