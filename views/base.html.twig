@@ -5,8 +5,10 @@
         {% block head %}
             <title>{% block title %} {% endblock %} BILLET SIMPLE POUR L'ALASKA-Jean Forteroche</title>
             <meta charset="utf-8" />
-            <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-            <link rel="stylesheet" href="css/style.css" />
+            <link rel="shortcut icon" href="http://localhost/chefDeProjet/projet3ecrivain/public/images/favicon.ico" type="image/x-icon">
+            <link rel="stylesheet" href="http://localhost/chefDeProjet/projet3ecrivain/public/css/style.css" />
+            
+          
         {% endblock %}
     </head>
 
@@ -17,7 +19,7 @@
             <header><!--Haut de page-->
             {% block header %}
                 <div id="logo">
-                    <a href=""><img src="images/logo.png" alt="Logo du Blog Ecrivain" ></a>
+                    <a href=""><img src="http://localhost/chefDeProjet/projet3ecrivain/public/images/logo.png" alt="Logo du Blog Ecrivain" ></a>
                 </div>
 
                 <div id="titre_site">
@@ -28,21 +30,22 @@
                 <nav>
                     <ul>
                         <li><a href="index.php" >Accueil</a></li>
-                        <li><a href="auteur.php" >Auteur</a></li>
-                        <li><a href="chapitres.php" >Chapitres</a></li>
-                        <li><a href="contacts.php" >Contacts</a></li>
+                        <li><a href="../src/Controller/auteur.php" >Auteur</a></li>
+                        <li><a href="../src/Controller/chapitres.php" >Chapitres</a></li>
+                        <li><a href="../src/Controller/contacts.php" >Contacts</a></li>
                     </ul>
                 </nav>
 
                 <div class="reseaux_sociaux">
                         <ul>
-                            <li><a href="#" target="_blank"><img src="images/facebook.png" alt="Facebook" ></a></li>
-                            <li><a href="#" target="_blank"><img src="images/twitter.jpg" alt="Twitter" ></a></li>
-                            <li><a href="#" target="_blank"><img src="images/linkedin.png" alt="Linkedin" ></a></li>
+                            <li><a href="#" target="_blank"><img src="http://localhost/chefDeProjet/projet3ecrivain/public/images/facebook.png" alt="Facebook" ></a></li>
+                            <li><a href="#" target="_blank"><img src="http://localhost/chefDeProjet/projet3ecrivain/public/images/twitter.jpg" alt="Twitter" ></a></li>
+                            <li><a href="#" target="_blank"><img src="http://localhost/chefDeProjet/projet3ecrivain/public/images/linkedin.png" alt="Linkedin" ></a></li>
                         </ul>
                     </div>
             {% endblock %}
             </header>
+            <div class="line"></div>
             {% block main %}
 
             {% endblock %}
@@ -105,9 +108,9 @@
 
                     <div class="reseaux_sociaux">
                         <ul>
-                            <li><a href="#" target="_blank"><img src="images/facebook.png" alt="Facebook" ></a></li>
-                            <li><a href="#" target="_blank"><img src="images/twitter.jpg" alt="Twitter" ></a></li>
-                            <li><a href="#" target="_blank"><img src="images/linkedin.png" alt="Linkedin" ></a></li>
+                            <li><a href="#" target="_blank"><img src="http://localhost/chefDeProjet/projet3ecrivain/public/images/facebook.png" alt="Facebook" ></a></li>
+                            <li><a href="#" target="_blank"><img src="http://localhost/chefDeProjet/projet3ecrivain/public/images/twitter.jpg" alt="Twitter" ></a></li>
+                            <li><a href="#" target="_blank"><img src="http://localhost/chefDeProjet/projet3ecrivain/public/images/linkedin.png" alt="Linkedin" ></a></li>
                         </ul>
                     </div>
                 </div>
