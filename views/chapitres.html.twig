@@ -12,22 +12,10 @@
                     <nav>
                         <h2>Tous les Chapitres</h2>
                         <ul>
-                            <li><a href="chapitre.php" >Chapitre x: Titre X</a></li>
-                            <li><a href="chapitre.php" >Chapitre x: Titre X</a></li>
-                            <li><a href="chapitre.php" >Chapitre x: Titre X</a></li>
-                            <li><a href="chapitre.php" >Chapitre x: Titre X</a></li>
-                            <li><a href="chapitre.php" >Chapitre x: Titre X</a></li>
-                            <li><a href="chapitre.php" >Chapitre x: Titre X</a></li>
-                            <li><a href="chapitre.php" >Chapitre x: Titre X</a></li>
-                            <li><a href="chapitre.php" >Chapitre x: Titre X</a></li>
-                            <li><a href="chapitre.php" >Chapitre x: Titre X</a></li>
-                            <li><a href="chapitre.php" >Chapitre x: Titre X</a></li>
-                            <li><a href="chapitre.php" >Chapitre x: Titre X</a></li>
-                            <li><a href="chapitre.php" >Chapitre x: Titre X</a></li>
-                            <li><a href="chapitre.php" >Chapitre x: Titre X</a></li>
-                            <li><a href="chapitre.php" >Chapitre x: Titre X</a></li>
-                            <li><a href="chapitre.php" >Chapitre x: Titre X</a></li>
-                            <li><a href="chapitre.php" >Chapitre x: Titre X</a></li>
+                            {% for chapitre in chapitres %}
+                                    <li><a href="chapitre.php">{{chapitre.titrechapitre}}</a></li>
+                            {% endfor %}
+
                         </ul>
                     </nav>
 
@@ -35,81 +23,35 @@
 
                     <div id="commentaires_recents" lang="zxx">
                         <h2>Commentaires récents</h2>
-                        <ul>
-                            <li>lorem ipsum momemtum da mora estacomo nation</li>
+                        {% for commentairesignale in commentaires %}
+                            <h5> {{commentairesignale.nom}} </h5>
+                            <P>{{commentairesignale.messagecomm}}</P>
+                            <p> {{commentairesignale.datecommentaire|date("m/d/Y")}} </p>
                             <br />
-                            <li>lorem ipsum momemtum da mora estacomo nation</li>
-                            <br />
-                            <li>lorem ipsum momemtum da mora estacomo nation</li>
-                            <br />
-                            <li>lorem ipsum momemtum da mora estacomo nation</li>
-                            <br />
-                            <li>lorem ipsum momemtum da mora estacomo nation</li>
-                            <br />
-                            <li>lorem ipsum momemtum da mora estacomo nation</li>
-                            <br />
-                        </ul>
+                        {% endfor %}
                     </div>
                     
                 </div>
                 <div class="verticale"></div>
                 <div id="chapitres_recents">
                     <h2>Chapitres récemment publiés</h2>
-                    <article>
-                        <h2>Chapitre x: Titre x</h2>
-                        <img src="images/photo-1.jpg" alt="image a la une">
-                        <p lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec id tincidunt risus, et lacinia lorem.Vestibulum sollicitudin 
-                        varius urna condimentum scelerisque.<br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec id tincidunt risus, et lacinia lorem.Vestibulum sollicitudin 
-                        varius urna condimentum scelerisque.<br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec id tincidunt risus, et lacinia lorem.Vestibulum sollicitudin 
-                        varius urna condimentum scelerisque</p>
-                        <div class="bouton">
-                            <a href="../src/Controller/chapitre.php" target="_blank">Lire la suite</a>
-                        </div>
-                    </article>
-
-                    <div class="line"></div>
-
-                    <article>
-                        <h2>Chapitre x: Titre x</h2>
-                        <img src="images/photo-1.jpg" alt="image a la une">
-                        <p lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec id tincidunt risus, et lacinia lorem.Vestibulum sollicitudin 
-                        varius urna condimentum scelerisque.<br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec id tincidunt risus, et lacinia lorem.Vestibulum sollicitudin 
-                        varius urna condimentum scelerisque.<br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec id tincidunt risus, et lacinia lorem.Vestibulum sollicitudin 
-                        varius urna condimentum scelerisque</p>
-                        <div class="bouton">
-                            <a href="../src/Controller/chapitre.php" target="_blank">Lire la suite</a>
-                        </div>
-                    </article>
-
-                    <div class="line"></div>
-
-                    <article>
-                        <h2>Chapitre x: Titre x</h2>
-                        <img src="images/photo-1.jpg" alt="image a la une">
-                        <p lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec id tincidunt risus, et lacinia lorem.Vestibulum sollicitudin 
-                        varius urna condimentum scelerisque.<br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec id tincidunt risus, et lacinia lorem.Vestibulum sollicitudin 
-                        varius urna condimentum scelerisque.<br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec id tincidunt risus, et lacinia lorem.Vestibulum sollicitudin 
-                        varius urna condimentum scelerisque</p>
-                        <div class="bouton">
-                            <a href="../src/Controller/chapitre.php" target="_blank">Lire la suite</a>
-                        </div>
-                    </article>
                     
+                    {% for chapitre in chapitres %}
+                    <article>
+                        <h2>{{ chapitre.titrechapitre }}</h2>
+                        {{chapitre.imageChapitre }}
+                        <p>{{ chapitre.textechapitre }}</p>
+                        {% block bouton %}
+                            <div class="bouton">
+                                <a href="../src/Controller/chapitre.php" target="_blank">Lire la suite</a>
+                            </div>
+                        {% endblock %}
+                    </article>
+                        {% block line %}
+                        <div class="line"></div>
+                        {% endblock %}
+                       
+                    {% endfor %}
                     
                 </div>
 

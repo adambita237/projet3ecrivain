@@ -55,26 +55,18 @@
 
         <div id="Commentaires_chapitre">
             <h2>Commentaires</h2>
-            <h5>John Doa - DD/MM/AAAA </h5>
-            <p lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Donec id tincidunt risus, et lacinia lorem. Vestibulum sollicitudin 
-            varius urna condimentum scelerisque.Vestibulum sollicitudin 
-            varius urna condimentum scelerisque.</p>
-            <p><a href="#">Répondre</a> | <a href="#">Signaler</a></p>
-            <br />
-            <h5>John Doa - DD/MM/AAAA </h5>
-            <p lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Donec id tincidunt risus, et lacinia lorem. Vestibulum sollicitudin 
-            varius urna condimentum scelerisque.Vestibulum sollicitudin 
-            varius urna condimentum scelerisque.</p>
-            <p><a href="#">Répondre</a> | <a href="#">Signaler</a></p>
-            <br />
-            <h5>John Doa - DD/MM/AAAA </h5>
-            <img src="images/signaler.png" alt=""><p lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Donec id tincidunt risus, et lacinia lorem. Vestibulum sollicitudin 
-            varius urna condimentum scelerisque.Vestibulum sollicitudin 
-            varius urna condimentum scelerisque.</p>
-            <p><a href="#">Répondre</a> | <a href="#">Signaler</a></p>
+            {% for commentairesignale in commentaires  %}
+                {% if commentairesignale.signaler == 0 %}
+                    <p><strong> {{commentairesignale.messagecomm }}</strong> </p>
+                    <h5>{{commentairesignale.nom}} - {{commentairesignale.datecommentaire}} </h5>
+                    <p><a href="#">Répondre</a> | <a href="#">Signaler</a></p>
+                {% else %}
+                    <p><em>{{commentairesignale.messagecomm }}</em></p>
+                    <h5>{{commentairesignale.nom}} - {{commentairesignale.datecommentaire}} </h5>
+                    <p><a href="#">Répondre</a> </p>
+                {% endif %}
+                 <div class="line"></div>
+            {% endfor %}
         </div>
 
         <div class="line"></div>
