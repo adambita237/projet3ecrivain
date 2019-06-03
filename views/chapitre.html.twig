@@ -58,11 +58,11 @@
             {% for commentairesignale in commentaires  %}
                 {% if commentairesignale.signaler == 0 %}
                     <p><strong> {{commentairesignale.messagecomm }}</strong> </p>
-                    <h5>{{commentairesignale.nom}} - {{commentairesignale.datecommentaire}} </h5>
+                    <h5>{{commentairesignale.nom}} - {{commentairesignale.datecommentaire|date("m/d/Y")}} </h5>
                     <p><a href="#">Répondre</a> | <a href="#">Signaler</a></p>
                 {% else %}
                     <p><em>{{commentairesignale.messagecomm }}</em></p>
-                    <h5>{{commentairesignale.nom}} - {{commentairesignale.datecommentaire}} </h5>
+                    <h5>{{commentairesignale.nom}} - {{commentairesignale.datecommentaire|date("m/d/Y")}} </h5>
                     <p><a href="#">Répondre</a> </p>
                 {% endif %}
                  <div class="line"></div>

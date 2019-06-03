@@ -23,10 +23,10 @@
 
                     <div id="commentaires_recents" lang="zxx">
                         <h2>Commentaires récents</h2>
-                        {% for commentairesignale in commentaires %}
-                            <h5> {{commentairesignale.nom}} </h5>
-                            <P>{{commentairesignale.messagecomm}}</P>
-                            <p> {{commentairesignale.datecommentaire|date("m/d/Y")}} </p>
+                        {% for commentaire in commentaires %}
+                            <h5> {{commentaire.nom}} </h5>
+                            <P>{{commentaire.messagecomm}}</P>
+                            <p> {{commentaire.datecommentaire|date("m/d/Y")}} </p>
                             <br />
                         {% endfor %}
                     </div>

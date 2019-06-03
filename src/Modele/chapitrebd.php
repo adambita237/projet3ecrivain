@@ -38,7 +38,7 @@ function findAll(\PDO $bdd): array
     
     $reponse->closeCursor(); //Termine le traitement de la requête */
 }
-$commentaires = $bdd->query ('SELECT * FROM commentairesignale ORDER BY id DESC');
+$commentaires = $bdd->query ('SELECT * FROM  commentaire ORDER BY id DESC');
     return $commentaires;
 
 //Afficher un extrait du chapitre
