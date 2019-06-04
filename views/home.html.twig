@@ -41,31 +41,22 @@
             <h2> Chapitres récemment publiés</h2>
             <section>
                 
-                <article>
-                    <h2>Chapitre x: Titre x</h2>
-                    <p lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Donec id tincidunt risus, et lacinia lorem.Vestibulum sollicitudin 
-                    varius urna condimentum scelerisque.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Donec id tincidunt risus, et lacinia lorem.Vestibulum sollicitudin 
-                    varius urna condimentum scelerisque</p>
-                    <div class="bouton">
-                        <a href="chapitre.php" target="_blank">Lire la suite</a>
-                    </div>
-                </article>
-
-                <article>
-                        <h2>Chapitre x: Titre x</h2>
-                        <p lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec id tincidunt risus, et lacinia lorem.Vestibulum sollicitudin 
-                        varius urna condimentum scelerisque.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Donec id tincidunt risus, et lacinia lorem.Vestibulum sollicitudin 
-                        varius urna condimentum scelerisque</p>
-                        <div class="bouton">
-                            <a href="chapitre.php" target="_blank"> Lire la suite </a>
-                        </div>
-                </article>
+                   {% for chapitre in chapitres %}
+                    <article>
+                        <h2>{{ chapitre.titrechapitre }}</h2>
+                        {{chapitre.imageChapitre }}
+                        <p>{{ chapitre.textechapitre }}</p>
+                        {% block bouton %}
+                            <div class="bouton">
+                                <a href="../src/Controller/chapitre.php" target="_blank">Lire la suite</a>
+                            </div>
+                        {% endblock %}
+                    </article>
+                        {% block line %}
+                        <div class="line"></div>
+                        {% endblock %}
+                       
+                    {% endfor %}
             </section>
 
             <div class="line"></div>
